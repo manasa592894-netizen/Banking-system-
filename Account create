@@ -1,0 +1,30 @@
+# ---------------- CREATE ACCOUNT ----------------
+
+print("\n===== CREATE NEW ACCOUNT =====")
+
+name = input("Enter Account Holder Name: ")
+account_number = input("Enter Account Number: ")
+password = input("Create Password: ")
+balance = float(input("Enter Initial Deposit: ₹"))
+
+print("\nAccount Created Successfully!")
+print("------------------------------")
+print("Account Holder :", name)
+print("Account Number :", account_number)
+print("Balance        : ₹", balance)
+
+# ---------------- BANK ACCOUNT CLASS ----------------
+
+class BankAccount:
+    def __init__(self, name, account_number, password, balance):
+        self.name = name
+        self.account_number = account_number
+        self.password = password
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"₹{amount} deposited successfully.")
+
+    def withdraw(self, amount):
+        if amount
