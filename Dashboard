@@ -1,0 +1,39 @@
+from tkinter import *
+
+# Dashboard Window
+dashboard = Tk()
+dashboard.title("Banking System Dashboard")
+dashboard.geometry("500x500")
+dashboard.configure(bg="lightblue")
+
+# Heading
+Label(
+    dashboard,
+    text="BANKING SYSTEM",
+    font=("Arial", 20, "bold"),
+    bg="lightblue",
+    fg="darkblue"
+).pack(pady=20)
+
+# Welcome Message
+Label(
+    dashboard,
+    text="Welcome to Your Dashboard",
+    font=("Arial", 14),
+    bg="lightblue"
+).pack(pady=10)
+
+# Buttons
+Button(dashboard, text="Create Account", width=25, height=2).pack(pady=5)
+
+Button(dashboard, text="Deposit Money", width=25, height=2).pack(pady=5)
+
+Button(dashboard, text="Withdraw Money", width=25, height=2).pack(pady=5)
+
+Button(dashboard, text="Check Balance", width=25, height=2).pack(pady=5)
+
+Button(dashboard, text="Transaction History", width=25, height=2).pack(pady=5)
+
+Button(dashboard, text="Logout", width=25, height=2, bg="red", fg="white").pack(pady=20)
+
+dashboard.mainloop()
